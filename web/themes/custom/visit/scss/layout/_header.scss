@@ -2,3 +2,85 @@
 iframe {
     border: 0 !important;
 }
+
+.block-selecteurdelanguecontent{
+    float: right;
+    ul{
+        list-style: none;
+        float: right;
+    
+        li{
+            display: inline;
+            padding: 0 0 0 10px;
+            &.is-active{
+                font-family: $header-font-family;
+            }
+            a{
+                color: $black;
+                background-color: $white;
+                display: inline-block;
+                border: 1px solid $black;
+                padding: 1px 5px 2px 5px;
+                text-transform: uppercase;
+                &:hover{
+                    background-color: $light-gray;
+                }
+            }
+        }
+    }
+}
+.block-selecteurdelanguecontent{
+    margin-top: 8px;
+}
+.block-marquedusite{
+    float:left;
+    height: 50px;
+    width: 50px;
+}
+
+#header{
+    width: 100%;
+    background: rgba($secondary-color, 0.8);
+    box-shadow: 2px 0px 3px rgba($black, 0.2);
+    position: fixed !important;
+    z-index: 1000;
+    left:0;
+    .top-bar-left {
+        nav{
+            display: block;
+            width: 100%;
+            float: left;
+            margin-left: 70px;
+            a{
+                border-bottom: 3px solid;
+                border-color: $white;
+                transition: all 0.3s ease-out;
+    
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .active {
+        color: $primary-color;
+        border-color: $primary-color;
+    }
+    /*
+    .top-bar-right {
+        .links{
+            float: left;
+        }
+    }
+    
+    .social-icons {
+        float: right;
+    }
+    */
+    .menu > li > a{
+        color: $black;
+        font-family: $header-font-family;
+        text-transform: uppercase;
+    }
+
+}

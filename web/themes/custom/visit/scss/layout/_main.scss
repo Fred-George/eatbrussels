@@ -1,0 +1,9 @@
+.page-content{
+    margin-top: 50px;
+}
+
+@include breakpoint(medium up){
+    .page-content{
+        margin-top: 80px;
+    }
+}
