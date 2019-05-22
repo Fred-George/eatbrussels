@@ -2,13 +2,22 @@
 iframe {
     border: 0 !important;
 }
-
 .block-selecteurdelanguecontent{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 200px;
+    z-index: 1500;
+}
+.block-selecteurdelanguecontent-2{
     float: right;
+    font-size: 0.8em;
+}
+.block-selecteurdelanguecontent, .block-selecteurdelanguecontent-2{ 
     ul{
         list-style: none;
         float: right;
-    
+        margin: 0;
         li{
             display: inline;
             padding: 0 0 0 10px;
@@ -17,47 +26,60 @@ iframe {
             }
             a{
                 color: $black;
-                background-color: $white;
+                background-color: rgba($white, 0.8);
                 display: inline-block;
                 border: 1px solid $black;
                 padding: 1px 5px 2px 5px;
                 text-transform: uppercase;
-                &:hover{
+                &:hover, &:focus{
                     background-color: $light-gray;
                 }
             }
         }
     }
 }
-.block-selecteurdelanguecontent{
-    margin-top: 8px;
-}
+
 .block-marquedusite{
     float:left;
     height: 50px;
     width: 50px;
+    margin-right: 20px;
+}
+.block-marquedusite-2{
+    position: absolute;
+    top: 12px;
+    left: 45px;
+    font-family: $header-font-family;
+    a{
+        color: $black;
+    }
 }
 
 #header{
     width: 100%;
     background: rgba($secondary-color, 0.8);
-    box-shadow: 2px 0px 3px rgba($black, 0.2);
+    box-shadow: 2px 0px 3px rgba($black, 0.3);
     position: fixed !important;
     z-index: 1000;
     left:0;
     .top-bar-left {
+        width: 100%;
         nav{
             display: block;
-            width: 100%;
             float: left;
-            margin-left: 70px;
+            margin: 0;
+            padding: 0;
+            li{
+                padding-right: 15px;
+            }
             a{
-                border-bottom: 3px solid;
-                border-color: $white;
                 transition: all 0.3s ease-out;
-    
-                &:hover{
-                    opacity: 1;
+                padding: 20px 0 17px 0;
+                border-color: transparent;
+                border-width: 0 0 3px 0;
+                border-style: solid;
+                &:hover, &:focus, &.is-active{
+                    border-color: $primary-color;
                 }
             }
         }
@@ -66,21 +88,18 @@ iframe {
         color: $primary-color;
         border-color: $primary-color;
     }
-    /*
-    .top-bar-right {
-        .links{
-            float: left;
-        }
-    }
-    
-    .social-icons {
-        float: right;
-    }
-    */
     .menu > li > a{
         color: $black;
         font-family: $header-font-family;
         text-transform: uppercase;
     }
 
+}
+
+@include breakpoint(medium up){
+    #header{
+        .top-bar-right {
+            position: relative;
+        }
+    }
 }

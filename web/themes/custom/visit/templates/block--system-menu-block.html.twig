@@ -1,5 +1,5 @@
     {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-    <nav id="nav">
+    <nav id="nav" {{ attributes }}>
       {% block content %}
         {{ content }}
       {% endblock %}
