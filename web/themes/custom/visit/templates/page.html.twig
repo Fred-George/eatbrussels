@@ -77,7 +77,13 @@
           </div>
         {% endif %}
       {% endif %}
-
+      {% if page.topbar %}
+      <div class="social-bar hide-for-small-only">
+        <div class="row">
+          {{ page.topbar }}
+        </div>
+      </div>
+      {% endif %}
       <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t }}">
         {% if page.header %}
           <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
