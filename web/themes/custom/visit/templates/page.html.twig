@@ -88,7 +88,7 @@
         {% if page.header %}
           <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
             <button class="menu-icon" type="button" data-toggle="main-menu"></button>
-            {{ page.topbar }}
+            {{ page.topbar_mobile }}
           </div>
           <div class="top-bar" id="main-menu">
             <div class="row">
@@ -178,16 +178,18 @@
           </div>
         {% endif %}
       </div>
-      <footer id="landing-footer" class="clearfix">
+       <footer id="landing-footer" class="clearfix">
         {{ page.footer_first }}
         <div class="row logos">
           
         </div>
         <div class="row">
-            <div class="columns small-6">&copy; {{ "now"|date('Y') }} visit.brussels</div>
+            <div class="columns small-6">
+              &copy; {{ "now"|date('Y') }} visit.brussels
+            </div>
             <!--Social Icons in Footer-->
             <div class="columns small-6">
-              
+              {{ page.footer_right }}
             </div>
            <!--End of Social Icons in Footer-->
         </div>
