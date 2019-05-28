@@ -1,6 +1,21 @@
 #content{
     padding: 10px;
 }
+.home-first{
+    height: 100vh;
+    background-image: url('../images/hp_background.jpg');
+    background-size: cover;
+    background-position: center;
+    .home-title{
+        text-indent: -4000px;
+        margin-top: 10vh;
+        text-align: center;
+        height: 40vh;
+        background-image: url('../logo.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
 
 @include breakpoint(medium up){
     #content{
