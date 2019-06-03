@@ -7,6 +7,7 @@ footer{
     font-family: $header-font-family;
     .social-footer{
         float: right;
+        margin-right: 10px;
         .social-icons {
             a{
                 border-style: none;
@@ -27,5 +28,11 @@ footer{
         display: inline-block;
         border: 3px solid $white;
         color: $white;
+        &.decline-button{
+            background: darken($primary-color, 3);
+            box-shadow: none;
+            text-shadow: none;
+            border-width: 2px;
+        }
     }
 }

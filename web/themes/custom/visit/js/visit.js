@@ -51,6 +51,23 @@
           }
         }
       });
+
+      /* Set active classes */
+      $(window).on('scroll', function(){
+        var win = $(window),
+              windowPosition = win.scrollTop();
+        // add activeClass to the div that is passing the top of the window
+        
+        $('.section').each(function() {
+          var top = $(this).offset().top - 80,
+              bottom = $(this).outerHeight(true) + top;
+          if ((windowPosition >= top) && (windowPosition <= bottom)) {
+              $('#nav').find('a[href*="#' + this.id + '"]').addClass('is-active');
+          } else {
+            $('#nav').find('a[href*="#' + this.id + '"]').removeClass('is-active').blur();
+          }
+        });
+      });
       
       /* Preloader and animations */
       
@@ -58,6 +75,7 @@
         $('#status').fadeOut(); // will first fade out the loading animation
         $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
         $('body').delay(350).css({'overflow-y': 'visible'});
+        $('#nav').find('a[href*="#"]').removeClass('is-active');
       });
     }
   };

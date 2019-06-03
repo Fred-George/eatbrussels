@@ -115,12 +115,14 @@
           </main>
         </div>
       </div>
-      <section id="zone1" class="zone1 section scrollto">
+      {% if page.homepage_zone_1 %}
+      <section id="presale" class="zone1 section scrollto">
         <div class="row">
           {{ page.homepage_zone_1 }}
         </div>
       </section>
-
+      {% endif %}
+      {% if page.homepage_zone_2 %}
       <section id="zone2" class="zone2 section scrollto">
         <div class="wrapper">
           <div class="row">
@@ -128,18 +130,21 @@
           </div>
         </div>
       </section>
-
+      {% endif %}
+      {% if page.homepage_zone_3 %}
       <section id="zone3" class="zone3 section scrollto">
         <div class="row">
           {{ page.homepage_zone_3 }}
         </div>
       </section>
-
+      {% endif %}
+      {% if page.homepage_zone_4 %}
       <section id="zone4" class="zone4 section scrollto">
         <div class="row">
           {{ page.homepage_zone_4 }}
         </div>
       </section>
+      {% endif %}
       <footer id="landing-footer" class="clearfix">
         {{ page.footer_first }}
         <div class="row logos">

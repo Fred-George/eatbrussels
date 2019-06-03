@@ -17,8 +17,94 @@
     }
 }
 
+.section-header{
+    display: inline-block;
+    background: $primary-color;
+    color: $white;
+    line-height: 1em;
+    padding: 5px 10px 3px 10px;
+    margin: 0 0 0.8em 10px;
+    transform: rotate(-5deg);
+}
+
+.section{
+    padding: 55px 0 2em 0; 
+}
+/* Presales */
+
+.em-small{
+    font-family: $header-font-family;
+}
+.em-big{
+    font-family: $header-font-family;
+    font-size: 2em;
+    line-height: 1.4em;
+    margin-bottom: 0;
+}
+
+.block-views-block-presale-block-1{
+    .views-row{
+        article{
+            color: $white;
+            margin-bottom: 1em;
+        }
+        .presale-content{
+            border-top: 2px solid $white;
+            padding: 10px;
+            h3{
+                text-align: center;
+            }
+            ul{
+                margin-top: 1.5em;
+            }
+        }
+    }
+    .first{
+        article{
+            background-color: $primary-color;
+        }
+    }
+    .second{
+        article{
+            background-color: rgba($primary-color, .9);
+        }
+    }
+    .third{
+        article{
+            background-color: rgba($primary-color, .8);
+        }
+    }
+    .fourth{
+        article{
+            background-color: rgba($primary-color, .7);
+        }
+    }
+}
+
 @include breakpoint(medium up){
-    #content{
-        
+    .section{
+        padding: 120px 0 2em 0; 
+    }
+    .block-views-block-presale-block-1{
+        .views-row{
+            article{
+                height: 600px;
+                position: relative;
+            }
+            .price{
+                position: absolute;
+                bottom: 10px;
+            }
+        }
+    }
+}
+
+@include breakpoint(large up){
+    .block-views-block-presale-block-1{
+        .views-row{
+            article{
+                height: 700px;
+            }
+        }
     }
 }
