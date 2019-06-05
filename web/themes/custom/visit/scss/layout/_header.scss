@@ -91,6 +91,7 @@ iframe {
 }
 
 .block-marquedusite{
+    position: absolute;
     float:left;
     height: 50px;
     width: 50px;
@@ -196,6 +197,7 @@ iframe {
         .top-bar-left {
             width: 100%;
             nav{
+                margin-left: 70px;
                 li{
                     padding-right: 15px;
                 }

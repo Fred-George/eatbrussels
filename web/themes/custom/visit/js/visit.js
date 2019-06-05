@@ -15,6 +15,12 @@
         $(".home-first").enllax();
       });
       
+      /* Facebook call */
+
+      $('.purchase-button').on('click', function(e){
+        fbq('track', 'InitiateCheckout');
+      });
+
       /* Smooth scroll */
       $('a[href*="#"]')
       // Remove links that don't actually link to anything
