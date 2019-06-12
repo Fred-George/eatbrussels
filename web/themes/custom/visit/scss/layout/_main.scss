@@ -1,9 +1,12 @@
 #content{
     padding: 10px;
     &.page-content{
-        padding-top: 100px;
+        padding-top: 30px;
         padding-bottom: 30px;
     }
+}
+h1{
+    margin-bottom: .8em;
 }
 .home-first{
     height: 100vh;
@@ -113,7 +116,93 @@
     }
 }
 
+/** End Presales **/
+
+/** Chefs view **/
+
+.views-element-container{
+    padding: 10px;
+    h2{
+        display: inline-block;
+        background: $primary-color;
+        color: $white;
+        line-height: 1em;
+        padding: 5px 10px 3px 10px;
+        margin: 1em 0 0.8em 10px;
+        transform: rotate(-5deg);
+    }
+    .chef-teaser{
+        position: relative;
+        margin-bottom: 20px;
+        a{
+            h3{
+                position: absolute;
+                font-size: 1.6em;
+                top: 0;
+                color: $white;
+                padding: 10px 30px 0 10px;
+                text-align: center;
+            }
+            .views-field-field-jour{
+                position: absolute;
+                bottom: 10px;
+                ul{
+                    list-style: none;
+                    margin: 0;
+                    li{
+                        font-family: $header-font-family;
+                        display: inline-block;
+                        list-style-type: none;
+                        color: $white;
+                        background-color: rgba($black, .7);
+                        padding: 0 10px 0 10px;
+                        margin: 1px 10px 1px 10px;
+                    }
+                }
+            }
+            &:hover, &:focus{
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+/** End chefs view **/
+
+/** Food content page **/
+.food-content{
+    .field_jour{
+        display: inline-block;
+        padding: 0 10px 0 10px;
+        margin: 5px 25px 10px 0;
+        color: $white;
+        background-color: $primary-color;
+        font-family: $header-font-family;
+        font-size: 1.2em;
+        transform: rotate(-5deg);
+    }
+    .field_image{
+        margin-bottom: .8em;
+    }
+
+    .field_menu{
+        background-color: rgba($primary-color, .3);
+        padding: 20px 20px 4px 20px;
+        font-family: $header-font-family;
+    }
+    .body{
+        padding-top: 1.5em;
+    }
+}
+
+/** End food content page **/
+
 @include breakpoint(medium up){
+    #content{
+        &.page-content{
+            padding-top: 100px;
+        }
+    }
     #home-zone{
         font-size: 1.5em;
     }
