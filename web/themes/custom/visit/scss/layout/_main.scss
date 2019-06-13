@@ -23,6 +23,12 @@ h1{
         background-position: top center;
     }
 }
+.transition{
+    height: 20vh;
+    background-image: url('../images/hp_background.jpg');
+    background-size: cover;
+    background-position: center;
+}
 #home-zone{
     color: $white;
     font-family: $header-font-family;
@@ -122,6 +128,28 @@ h1{
 
 .views-element-container{
     padding: 10px;
+    form{
+        background: rgba($primary-color, .7);
+        padding: 20px 20px 10px 20px;
+        label{
+            font-family: $header-font-family;
+            font-size: 1.2em;
+            color: $white;
+        }
+        .button{
+            background: $white;
+            font-family: $header-font-family;
+            font-size: 1.2em;
+            color: $primary-color;
+            padding: 10px;
+            margin-top: 10px;
+            transform: rotate(-5deg);
+            &:hover, &:focus{
+                background: rgba($white, .7);
+                color: $primary-color;
+            }
+        }
+    }
     h2{
         display: inline-block;
         background: $primary-color;
