@@ -1,6 +1,6 @@
 <article id="node-{{ node.id }}" {{ attributes }}>
   {{ content.field_image }}
-  <div class="presale-content">
+  <div class="vignoble-content">
     {{ title_prefix }}
     {% if not page %}
       <h3{{ title_attributes }}>{{ label }}</h3>
@@ -12,6 +12,4 @@
       {{ content|without('comment', 'links', 'field_tags', 'field_image') }}
     </div>
   </div>
-  {{ content.links }}
-  {{ content.comment }}
 </article>

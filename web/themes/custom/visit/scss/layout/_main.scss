@@ -225,6 +225,12 @@ h1{
 
 /** End food content page **/
 
+/** Vignoble content page **/
+.vignoble-content{
+    margin-top: 1em;
+}
+/** End vignoble content page **/
+
 @include breakpoint(medium up){
     #content{
         &.page-content{
