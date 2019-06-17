@@ -160,6 +160,7 @@ h1{
         transform: rotate(-5deg);
     }
     .chef-teaser{
+        z-index: 10;
         position: relative;
         margin-bottom: 20px;
         a{
