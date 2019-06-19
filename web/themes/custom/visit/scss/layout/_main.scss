@@ -230,7 +230,44 @@ h1{
 .vignoble-content{
     margin-top: 1em;
 }
+.block-views-block-vignerons-block-1{
+    .vigneron-content{
+        margin-bottom: 1em;
+        .field_chateau{
+            font-family: $header-font-family;
+            font-size: 1.2;
+            margin: 10px 0 10px 0;
+        }
+        .body{
+            font-size: 0.9em;
+            line-height: 0.9em;
+            font-style: italic;
+        }
+    }
+}
 /** End vignoble content page **/
+
+/** Vignobles view **/
+
+.block-views-block-appelations-block-1{
+    .appelation{
+        .vignoble-content{
+            background: $primary-color;
+        }
+        h3{
+            padding: 10px;
+            line-height: 1em;
+        }
+        a{
+            color: $white;
+            &:hover, &:focus{
+                opacity: .7;
+            }
+        }
+    }
+}
+
+/** End vignobles view **/
 
 @include breakpoint(medium up){
     #content{
@@ -258,6 +295,24 @@ h1{
                 position: absolute;
                 bottom: 10px;
                 z-index: 20;
+            }
+        }
+    }
+    .block-views-block-vignerons-block-1{
+        .vigneron{
+            h3{
+                line-height: 1em;
+                height: 55px;
+            }
+            height: 840px;
+        }
+    }
+    .block-views-block-appelations-block-1{
+        .appelation{
+            .vignoble-content{
+                h3{
+                    height: 120px;
+                }
             }
         }
     }
