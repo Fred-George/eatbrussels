@@ -148,7 +148,7 @@ h1{
 
 /** Chefs view **/
 
-.views-element-container{
+.views-element-container, .block-views-block-village-international-block-1{
     padding: 10px;
     form{
         background: rgba($primary-color, .7);
@@ -220,12 +220,29 @@ h1{
 
 /** End chefs view **/
 
+/** Village international **/
+
+.block-views-block-village-international-block-1, .block-views-block-village-international-teaser-block-1{
+    .chef-teaser{
+        overflow: hidden;
+        h3{
+            text-shadow:
+            -1px -1px 0 #555,  
+             1px -1px 0 #555,
+             -1px 1px 0 #555,
+              1px 1px 0 #555;
+        }
+    }
+}
+
+/** End village international **/
+
 /** Food content page **/
 .food-content{
     .field_jour{
         display: inline-block;
         padding: 0 10px 0 10px;
-        margin: 5px 25px 10px 0;
+        margin: 5px 25px 20px 0;
         color: $white;
         background-color: $primary-color;
         font-family: $header-font-family;
