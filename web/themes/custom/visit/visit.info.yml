@@ -31,6 +31,7 @@ regions:
   homepage_zone_2: 'Homepage Zone 2'
   homepage_zone_3: 'Homepage Zone 3'
   homepage_zone_4: 'Homepage Zone 4'
+  homepage_zone_5: 'Homepage Zone 5'
   footer_first: 'Footer first column'
   footer_right: 'Footer right column'
 regions_hidden:
