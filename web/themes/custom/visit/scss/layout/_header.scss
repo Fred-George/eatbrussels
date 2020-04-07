@@ -75,7 +75,9 @@ iframe {
 }
 
 .block-selecteurdelanguecontent-2{
-    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     ul{
         li{
             a{
@@ -99,10 +101,10 @@ iframe {
     z-index: 20;
 }
 .block-marquedusite-2{
-    position: absolute;
-    top: 12px;
-    left: 45px;
+    width: 100%;
+    text-align: center;
     font-family: $header-font-family;
+    padding: 10px 0 0 0;
     a{
         color: $black;
     }
@@ -142,6 +144,7 @@ iframe {
         }
     }
     .title-bar{
+        position: relative;
         background: $primary-color;
         button.menu-icon, a{
             color: $white;
