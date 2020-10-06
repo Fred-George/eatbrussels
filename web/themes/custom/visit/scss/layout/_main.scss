@@ -8,6 +8,11 @@
 h1{
     margin-bottom: .8em;
 }
+.anchor{
+    display: block;
+    position: relative;
+    top: -100px;
+}
 .home-first{
     height: 100vh;
     background-image: url('../images/hp_background.jpg');
