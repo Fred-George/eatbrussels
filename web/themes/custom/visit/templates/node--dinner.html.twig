@@ -1,0 +1,14 @@
+<article id="node-{{ node.id }}" {{ attributes }}>
+  <div class="food-content row">
+    <h2 class="team">{{ content.field_equipe }}</h2>
+    
+    {{ title_prefix }}
+    {% if not page %}
+      <h3{{ title_attributes }}>{{ label }}</h3>
+    {% endif %}
+    {{ title_suffix }}
+    <div>
+      {{ content|without('field_equipe', 'comment', 'links') }}
+    </div>
+  </div>
+</article>

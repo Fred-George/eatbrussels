@@ -15,7 +15,7 @@ h1{
 }
 .home-first{
     height: 100vh;
-    background-image: url('../images/hp_background.jpg');
+    background-image: url('../images/bg_eat_2020.jpg');
     background-size: cover;
     background-position: center;
     .home-title{
@@ -282,12 +282,37 @@ h1{
         padding: 20px 20px 4px 20px;
         font-family: $header-font-family;
     }
+    .team{
+        font-size: 1.8em;
+    }
+    .field_intro{
+        font-weight: bold;
+    }
     .body{
         padding-top: 1.5em;
     }
 }
 
 /** End food content page **/
+
+/** Special 2020 **/
+.dinner-teaser{
+    margin-bottom:20px;
+    background-color: rgba($primary-color, .3);
+    padding: 15px;
+    a{
+        color: $black;
+        display: block;
+    }
+    .views-field-field-equipe{
+        font-family: $header-font-family;
+    }
+    &:hover{
+        background-color: rgba($primary-color, .5);
+    }
+}
+
+/** End special 2020 **/
 
 /** Vignoble content page **/
 .vignoble-content{
@@ -385,6 +410,11 @@ h1{
                     height: 120px;
                 }
             }
+        }
+    }
+    .dinner-teaser{
+        .views-field-field-equipe{
+            font-size: 1.2em;
         }
     }
 }
